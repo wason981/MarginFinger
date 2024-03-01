@@ -1,0 +1,10 @@
+generator:
+  nlabels: 10
+  conditioning: embedding
+discriminator:
+  nlabels: 10
+  conditioning: mask
+inherit_from: configs/tiny_imagenet/default.yaml
+training:
+  out_dir: output/tiny_imagenet/conditional
+  
