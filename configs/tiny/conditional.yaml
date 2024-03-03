@@ -1,0 +1,10 @@
+generator:
+  nlabels: 100
+  conditioning: embedding
+discriminator:
+  nlabels: 100
+  conditioning: mask
+inherit_from: configs/tiny/default.yaml
+training:
+  out_dir: output/tiny/conditional
+  

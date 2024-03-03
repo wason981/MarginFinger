@@ -1,0 +1,10 @@
+generator:
+  nlabels: 10
+  conditioning: embedding
+discriminator:
+  nlabels: 10
+  conditioning: mask
+inherit_from: configs/margin/default.yaml
+training:
+  out_dir: output/margin/conditional
+  

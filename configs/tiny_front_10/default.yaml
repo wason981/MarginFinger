@@ -1,0 +1,31 @@
+data:
+  type: image
+  train_dir: data/front-10
+  test_dir: data/val__
+  img_size: 64
+  nlabels: 10
+generator:
+  name: resnet2
+  nlabels: 1
+  conditioning: unconditional
+discriminator:
+  name: resnet2
+  nlabels: 1
+  conditioning: unconditional
+z_dist:
+  type: gauss
+  dim: 256
+clusterer:
+  name: supervised
+training:
+  gan_type: standard
+  reg_type: real
+  reg_param: 10.
+  take_model_average: true
+  model_average_beta: 0.999
+  sample_nlabels: 5
+  batch_size: 128
+  log_every: 1
+  inception_every: 1
+  backup_every: 100
+  sample_every: 10
