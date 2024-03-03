@@ -1,0 +1,4 @@
+python==3.8.16
+torch==2.0.1
+torchvision==0.15.2
+scikit-learn=1.3.2
