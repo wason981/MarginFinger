@@ -22,7 +22,7 @@ You can download our pre-splited data set in `data` for fingerprint generation a
 ## Generation Stage 
 ### 1. Training networks
 ```.bash
-# the trained model will put into the floder `model`
+# the trained model will put into the folder `model`
 python train.py configs/tiny_imagenet/conditional.yaml --devices 0 --d=0.1 --alpha=0.1 --beta=0 --gamma=1 --omega=5
 ```
 ### 2. Fingerprint Generaion
@@ -36,4 +36,15 @@ python sample.py
 #You should first go to the evaluation and then verify.
 cd evaluation
 python auc_matching_rate.py
+```
+## Citing this work
+If you use this repository for academic research, you are highly encouraged (though not required) to cite our paper:
+```
+@inproceedings{10.1145/3652583.3658058,
+author = {Liu, Weixing and Zhong, Shenghua},
+title = {MarginFinger: Controlling Generated Fingerprint Distance to Classification boundary Using Conditional GANs},
+year = {2024},
+url = {https://doi.org/10.1145/3652583.3658058},
+doi = {10.1145/3652583.3658058},
+}
 ```
