@@ -13,7 +13,7 @@ Abstract:*Deep neural networks (DNNs) are widely employed across various domains
 * We recommend Pytorch 2.0.1, which we used for all experiments in the paper.
 
 ## 1. Prepare the datasets
-You can download our pre-segmented data set in `data` for fingerprint generation and verification. The defender data set belongs to the model defender and is used for source model training and fingerprint GAN model training, while the attacker training set is used to simulate the attacker training to steal the model.
+You can download our pre-splited data set in `data` for fingerprint generation and verification. The defender data set belongs to the model defender and is used for source model training and fingerprint GAN model training, while the attacker training set is used to simulate the attacker training to steal the model.
 
 **CIFAR-10**. please download the datasets in the folder "data/cifar10" and models in the "model/cifar10" from [here](https://drive.google.com/drive/folders/1idozSeUa9fHQBdPwMGWmQ7GhZuD3Rtpc?usp=sharing)
 
